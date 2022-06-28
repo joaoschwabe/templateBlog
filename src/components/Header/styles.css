@@ -1,0 +1,9 @@
+.header{
+    align-items: flex-start;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.header h2{
+    color: #0080ff;
+    font-size: 2rem;
+}
