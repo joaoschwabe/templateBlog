@@ -17,19 +17,11 @@
   .blogItem-desc {
     position: relative;
     max-height: 50px;
-    overflow: hidden;
     padding-right: 0.6rem;
     font-size: 0.8rem;
     color: #a9a9a9;
   }
-  
-  .blogItem-desc::before {
-    position: absolute;
-    content: '...';
-    bottom: 0;
-    right: 0;
-  }
-  
+    
   .blogItem-wrap footer {
     display: flex;
     align-items: center;
@@ -43,6 +35,7 @@
   }
   
   .blogItem-author {
+    margin-top: 2vw;
     display: flex;
     align-items: center;
   }

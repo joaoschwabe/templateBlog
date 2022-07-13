@@ -2,10 +2,10 @@ import React from "react";
 import BlogItem from "./BlogItem";
 import './styles.css'
 
-const BlogList = ({ blogs }) => {
+const BlogList = ({ blog }) => {
   return (
     <div className="bloglist-wrap">
-      {blogs.map((blog) => (
+      {blog.map((blog) => (
         <BlogItem blog={blog} key={blog.title}/>
       ))}
     </div>
