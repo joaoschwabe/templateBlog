@@ -1,29 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
-import axios from 'axios'
+import { useApi } from "../../data/api";
 import BlogList from "./BlogList";
 
-function Home() {
-  const [blogs, setBlogs] = useState([])
+const Home = () => {
+  const { data } = useApi();
 
-    useEffect(() => {
-      axios
-        .get(
-          "https://api-fake-blog.herokuapp.com/postagens"
-        )
-        .then((response) => {
-          let data = response.data 
-            setBlogs(data)
-        });
-    }, []);
-
+  console.log(data);
   return (
     <div>
-      <Header/>
-      
-      <BlogList blog={blogs}/>
+      <Header />
+      <BlogList blog={data} />
     </div>
   );
-}
+};
 
 export default Home;
