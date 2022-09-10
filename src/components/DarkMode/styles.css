@@ -1,0 +1,13 @@
+#darkMode {
+    cursor: pointer;
+    width: 175px;
+    height: 40px;
+    border: solid 1px #000;
+    filter: grayscale(100%);
+    text-decoration: none;
+    border-radius: 6em;
+    transition: all 0.2s;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}

@@ -1,9 +1,14 @@
-.header{
-    align-items: flex-start;
+.nav {
+    align-items: center;
     margin: 20px;
     padding-bottom: 20px;
 }
-.header h2{
-    color: #0080ff;
+.nav-container h2 {
+    display: flex;
     font-size: 2rem;
+    font-weight: 800;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
 }

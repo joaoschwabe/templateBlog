@@ -12,7 +12,7 @@ const BlogItem = ( props ) => {
       <p className="blogItem-desc">{description}</p>
       <footer>
         <div className="blogItem-author">
-        <img src={authorAvatar} />
+        <img src="https://api-fake-blog.herokuapp.com/img/profile-1.jpg" />
           <div>
             <h6>{profileName}</h6>  
             <p>{postDate}</p>
